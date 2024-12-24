@@ -31,20 +31,32 @@ Hardware – PCs, Cyclone II , USB flasher
 5.	For different input combinations generate the timing diagram.
 
 
-**Program:**
-
-/* Program to implement the given logic function and to verify its operations in quartus using Verilog programming. 
-
-Developed by: RegisterNumber:*/
+**Program:*
+~~~~
+module ha_dataflow(a, b, s, ca); 
+    input a; 
+    input b; 
+    output s; 
+    output ca; 
+  assign#2 s=a^b; 
+  assign#2 ca=a&b;
+  endmodule
+~~~~
+~~~
+Developed by: SARANYA AV
+RegisterNumber: 24900084
+~~~~
 
 
 **RTL realization**
-
-**Output:**
-
-**RTL**
+![image](https://github.com/user-attachments/assets/1a8f4605-05b4-47ce-9a09-a657d9799703)
 
 **Timing Diagram**
+![image](https://github.com/user-attachments/assets/56b64bc8-b725-41c0-a493-ffe11a17c757)
+
+**Output**
+
+Hence we have implemented the given logic function and verified its operation in Quartus using Verilog programming.
 
 **Result:**
 
